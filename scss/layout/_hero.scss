@@ -1,0 +1,219 @@
+// Using media queries for the multiple image sizes was the best solution I could think of. I was reading about <picture> and setsrc which also seemed like a good solution. I would love to hear your thought on this.
+
+.hero {
+	background: $mint-green;
+	text-align: center;
+	background-image: url('../assets/images/endy-dreamiest-offer-ever-sale-hero-375x600-2x.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 650px;
+	width: 100%;
+
+	// Change main hero image based on screen size using mixins
+	@include small {
+		background-image: url('../assets/images/endy-dreamiest-offer-ever-sale-hero-500x600-2x.jpg');
+	}
+
+	@include medium {
+		background-image: url('../assets/images/endy-dreamiest-offer-ever-sale-hero-768x600-2x.jpg');
+	}
+	@include large {
+		background-image: url('../assets/images/endy-dreamiest-offer-ever-sale-hero-1024x645-2x.jpg');
+		height: 695px;
+	}
+	@include x-large {
+		background-image: url('../assets/images/endy-dreamiest-offer-ever-sale-hero-1440x645-2x.jpg');
+		height: 695px;
+	}
+	@include xx-large {
+		background-image: url('../assets/images/endy-dreamiest-offer-ever-sale-hero-2560x890-2x.jpg');
+		height: 940px;
+	}
+
+	.hero-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
+
+		.badge {
+			position: relative;
+			display: inline-block;
+			background: $gravy;
+			color: $white;
+			margin: 0;
+			padding: 5px;
+			margin: 20px 0;
+			align-self: center;
+			margin-left: 10px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			&:before,
+			&:after {
+				content: '';
+				position: absolute;
+				border-radius: 8px;
+				transform: rotate(180deg);
+				border: 14px solid transparent;
+				bottom: -2.5px;
+				@include medium {
+					border: 15px solid transparent;
+				}
+			}
+			&:before {
+				left: -23px;
+				border-left-color: #243746;
+				border-left-width: 10px;
+				@include medium {
+					left: -24px;
+				}
+			}
+			&:after {
+				right: -23px;
+				border-right-color: #243746;
+				border-right-width: 10px;
+				@include medium {
+					right: -24px;
+				}
+			}
+		}
+
+		h1 {
+			margin: 10px;
+			line-height: 1.3;
+		}
+
+		.btn {
+			padding: 18px 0;
+			width: 100%;
+			margin-bottom: 30px;
+			@include large {
+				width: 25%;
+			}
+		}
+		//
+		.offer-stamp {
+			position: absolute;
+			height: 100px;
+			width: 100px;
+			border-radius: 50%;
+			background: $gravy;
+			color: $white;
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			transform: rotate(-23deg);
+			left: 17px;
+			bottom: 90px;
+			text-transform: uppercase;
+			@include small {
+				left: 120px;
+				bottom: 75px;
+			}
+
+			@include medium {
+				left: 185px;
+				bottom: 65px;
+			}
+			@include large {
+				left: unset;
+				bottom: 130px;
+				right: 25%;
+				transform: rotate(23deg);
+			}
+			@include xx-large {
+				bottom: 230px;
+				right: 20%;
+			}
+
+			&:after {
+				content: '';
+				border-radius: 50%;
+				padding: 5px;
+				border: 3px solid $gravy;
+				position: absolute;
+				top: -6px;
+				left: -6px;
+				bottom: -6px;
+				right: -6px;
+			}
+
+			p {
+				margin: 0;
+			}
+		}
+		.bottom-content {
+			position: relative;
+		}
+		// The disclaimer can be hard to read at times, making it not AODA compliant . I think adding a lightly tinted background could help. Open to other suggestions too.
+		.terms {
+			color: $white;
+			line-height: 18px;
+			letter-spacing: 1px;
+
+			a {
+				position: relative;
+				color: $white;
+				text-decoration: none;
+
+				&:before {
+					content: '';
+					position: absolute;
+					width: 85%;
+					text-align: center;
+					height: 2px;
+					background-color: $white;
+					bottom: -5px;
+					left: 8px;
+				}
+				&:hover:before,
+				&:focus:before {
+					background: $rubine;
+				}
+			}
+		}
+	}
+}
+
+#popup {
+	display: none;
+}
+
+.popup-wrapper {
+	background: rgba(0, 0, 0, 0.75);
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 10;
+
+	.popup-content {
+		position: relative;
+		background-image: url('../assets/images/endy-pop-up-lifestyle-200x367-2x.jpg');
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+		padding: 15px;
+		height: 100%;
+		margin: 25px auto;
+		max-width: 100%;
+		width: 400px;
+
+		.btn {
+			width: 100%;
+		}
+		.close-popup {
+			cursor: pointer;
+			position: absolute;
+			top: 0;
+			right: 0;
+			background: transparent;
+			border: none;
+			@include img-hover;
+		}
+	}
+}

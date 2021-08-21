@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px"  viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>cart-16x16</title>
+    <desc>Created with Sketch.</desc>
+    <g id="cart-16x16" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" fill="#C40058" cx="5.85911591" cy="14.30324" r="1"></circle>
+        <path d="M1.71823182,1.3260868 L3.04800615,1.3260868 C3.32683185,1.3260868 3.5639215,1.52959203 3.60618304,1.80519634 L4.91936884,10.3690044 L12.3392511,9.56602033 C12.5821383,9.53973493 12.7805794,9.3602407 12.8310251,9.12120018 L13.8562217,4.26323102 C13.9206197,3.95807627 13.7254478,3.65849456 13.4202931,3.59409653 C13.3819529,3.58600546 13.3428747,3.58192696 13.3036901,3.58192696 L4.28413964,3.58192696 C4.13786313,3.58192696 3.9972937,3.52516637 3.89203,3.42359683" id="Path-10" stroke="#C40058" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M4.82061448,10.3690044 C4.52272574,10.5442829 4.37378137,10.8278113 4.37378137,11.2195898 C4.37378137,11.6113682 4.52272574,11.8839244 4.82061448,12.0372585 L12.5679337,12.0372585" id="Path-11" stroke="#C40058" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <circle id="Oval" fill="#C40058" cx="11.5679337" cy="14.30324" r="1"></circle>
+    </g>
+</svg>

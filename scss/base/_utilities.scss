@@ -1,0 +1,31 @@
+.wrapper {
+	margin: 0 auto;
+	max-width: 1400px;
+	padding: 0 20px;
+}
+
+.btn {
+	display: inline-block;
+	border: none;
+	font-family: 'Roboto', sans-serif;
+	background: $rubine;
+	color: $white;
+	padding: 1.2rem 0.4rem;
+	text-decoration: none;
+	font-weight: bold;
+	letter-spacing: 0.09em;
+	text-transform: uppercase;
+	border: 1px solid $rubine;
+	cursor: pointer;
+	border-radius: 2px;
+	transition: all 0.5s ease-in-out;
+	&:hover,
+	&:focus {
+		background: transparent;
+		color: $rubine;
+	}
+}
+
+.hide {
+	display: none;
+}

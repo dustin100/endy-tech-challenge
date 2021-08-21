@@ -1,0 +1,43 @@
+// Breakpoints
+// Using a mobile first approach. base scss starts at 375px
+@mixin small {
+	@media (min-width: 500px) {
+		@content;
+	}
+}
+@mixin medium {
+	@media (min-width: 768px) {
+		@content;
+	}
+}
+
+
+@mixin large {
+	@media (min-width: 1024px) {
+		@content;
+	}
+}
+// This quick-fix is here to adjust the logo in the menu to appear more in the center at this breakpoint. I wanted to add it because I feel it's common screen size. It could be used for more than this one fix, in which case I should think of a better name
+@mixin quick-fix {
+	@media (min-width: 1210px)  {
+		@content;
+	}
+}
+@mixin x-large {
+	@media (min-width: 1440px) {
+		@content;
+	}
+}
+@mixin xx-large {
+	@media (min-width: 2560px) {
+		@content;
+	}
+}
+
+@mixin img-hover {
+	transition: opacity 0.3s ease-in-out;
+	&:hover,
+	&:focus {
+		opacity: 0.6;
+	}
+}

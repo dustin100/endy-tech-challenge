@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>close-circle</title>
+    <desc>Created with Sketch.</desc>
+    <g id="close-circle" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="48x48-circle" transform="translate(9.000000, 8.500000)" stroke="#243746" stroke-width="2">
+            <circle id="Oval" cx="15" cy="15.4466257" r="15"></circle>
+            <g id="plus" transform="translate(15.000000, 15.446626) rotate(45.000000) translate(-15.000000, -15.446626) translate(7.000000, 7.446626)" stroke-linecap="round">
+                <path d="M8.12189617,3.00021184 L8.12189617,13.0044426" id="Path" transform="translate(8.000000, 8.500212) scale(-1, 1) translate(-8.000000, -8.500212) "></path>
+                <path d="M12.9986304,8.00423074 L3,8.00423074" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>
