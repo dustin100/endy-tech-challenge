@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 	const popup = document.getElementById('popup');
+	const bts = document.getElementById('back-to-shopping');
 	const onClose = document.getElementById('close-popup');
 	const mediaQuery = window.matchMedia('(min-width: 768px)');
 
@@ -14,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			// assign event listener after displaying popup
 			document.addEventListener('keydown', onExist);
 			onClose.addEventListener('click', onExist);
+			bts.addEventListener('click', onExist);
 		}
 	}
 	// close popup
@@ -59,13 +61,5 @@ document.addEventListener('DOMContentLoaded', function () {
 				e.preventDefault();
 			}
 		}
-	});
-
-	//  A fun addition that uses a CDN library which you can find here https://github.com/loonywizard/js-confetti
-	const canvas = document.getElementById('custom_canvas');
-	const button = document.getElementById('hire-me');
-	const jsConfetti = new JSConfetti({ canvas });
-	button.addEventListener('click', () => {
-		jsConfetti.addConfetti();
 	});
 });
