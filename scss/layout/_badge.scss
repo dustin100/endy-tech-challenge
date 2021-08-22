@@ -1,0 +1,41 @@
+.badge {
+	position: relative;
+	display: inline-block;
+	background: $gravy;
+	color: $white;
+	margin: 0;
+	padding: 5px;
+	margin: 20px 0;
+	align-self: center;
+	margin-left: 10px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		border-radius: 8px;
+		transform: rotate(180deg);
+		border: 14px solid transparent;
+		bottom: -2.5px;
+		@include medium {
+			border: 15px solid transparent;
+		}
+	}
+	&:before {
+		left: -23px;
+		border-left-color: #243746;
+		border-left-width: 10px;
+		@include medium {
+			left: -24px;
+		}
+	}
+	&:after {
+		right: -23px;
+		border-right-color: #243746;
+		border-right-width: 10px;
+		@include medium {
+			right: -24px;
+		}
+	}
+}
